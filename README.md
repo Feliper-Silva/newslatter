@@ -1,6 +1,8 @@
 <h1 align="center"> Newslatter </h1>
+<h3 align="center"> <img width="800" src="https://user-images.githubusercontent.com/84206933/155823865-79b1dff1-21de-447b-879d-17ffe380ff6e.svg" /></h3>
 
 ## :clipboard: Sobre
+
 
 Se inscreva é fique por dentro de todas as atualizações :smile:
 
