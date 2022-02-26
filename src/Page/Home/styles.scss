@@ -1,0 +1,45 @@
+section {
+  margin-left: 3rem;
+  .container-home {
+    display: flex;
+    justify-content: space-around;
+
+    .container-text {
+      margin-top: 5rem;
+      line-height: 5.25rem;
+      color: #fff;
+      h1 {
+        font-size: 4rem;
+      }
+      span {
+        color: #8c48d1;
+      }
+    }
+
+    .container-img {
+      > img {
+        margin-top: 2rem;
+        max-width: 36.87rem;
+        height: 22.94rem;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .container-home {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -3rem;
+    .container-text {
+      text-align: justify;
+      margin-left: -2.5rem;
+    }
+  }
+  .container-img {
+    > img {
+      display: none;
+      width: 17rem;
+      margin-bottom: -6rem;
+    }
+  }
+}
