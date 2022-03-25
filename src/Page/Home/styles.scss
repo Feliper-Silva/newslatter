@@ -1,45 +1,74 @@
-section {
-  margin-left: 3rem;
-  .container-home {
-    display: flex;
-    justify-content: space-around;
-
-    .container-text {
-      margin-top: 5rem;
-      line-height: 5.25rem;
-      color: #fff;
-      h1 {
-        font-size: 4rem;
+main {
+  section {
+    margin-left: 16%;
+    margin-right: 5%;
+    .container-home {
+      display: flex;
+      justify-content: space-between;
+      .container-text {
+        margin-top: 7%;
+        line-height: 5.25rem;
+        color: #fff;
+        h1 {
+          font-size: 4rem;
+        }
+        span {
+          color: #8c48d1;
+        }
       }
-      span {
-        color: #8c48d1;
-      }
-    }
 
-    .container-img {
-      > img {
-        margin-top: 2rem;
-        max-width: 36.87rem;
-        height: 22.94rem;
+      .container-img {
+        > img {
+          margin-top: 2rem;
+          max-width: 36.87rem;
+          height: 22rem;
+        }
       }
     }
   }
-}
-@media screen and (max-width: 450px) {
-  .container-home {
-    flex-wrap: wrap;
-    align-items: center;
-    margin-top: -3rem;
-    .container-text {
-      text-align: justify;
-      margin-left: -2.5rem;
+  @media screen and (max-width: 1035px) {
+    section {
+      .container-text {
+        h1 {
+          width: 70%;
+        }
+      }
+      .container-img {
+        > img {
+          width: 70%;
+        }
+      }
     }
   }
-  .container-img {
-    > img {
-      display: none;
-      width: 17rem;
-      margin-bottom: -6rem;
+  @media screen and (max-width: 850px) {
+    section {
+      .container-home {
+        flex-wrap: wrap;
+      }
+      .container-img {
+        order: -1;
+      }
+    }
+  }
+  @media screen and (max-width: 500px) {
+    section {
+      margin-left: 15px;
+      .container-home {
+        flex-wrap: wrap;
+        align-items: center;
+
+        .container-text {
+          text-align: justify;
+          > p {
+            line-height: 2rem;
+          }
+        }
+      }
+      .container-img {
+        > img {
+          display: none;
+        }
+      }
     }
   }
 }

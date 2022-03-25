@@ -1,20 +1,28 @@
-import './styles.scss';
+import "./styles.scss";
 
 export const Navbar = () => {
   return (
-    <navbar>
-      <div className="container-navbar">
-        <div className="logo-tipo">Logo</div>
+    <header>
+      <h1 className="logo-tipo">Logo</h1>
+      <nav>
         <div className="nav-links">
-          <a href="/">Inicio</a>
-          <a href="/">Serviços</a>
-          <a href="/">Sobre</a>
-          <a href="/">Contato</a>
-          <div className="button-login">
-            <a href="/">Já tem conta?</a>
-          </div>
+          <ul>
+            <li>
+              <a href="/">Inicio</a>
+            </li>
+            <li>
+              <a href="/">Serviços</a>
+            </li>
+            <li>
+              <a href="/">Sobre</a>
+            </li>
+            <li>
+              <a href="/">Contato</a>
+            </li>
+          </ul>
+          <button>Já tem conta?</button>
         </div>
-      </div>
-    </navbar>
+      </nav>
+    </header>
   );
 };
